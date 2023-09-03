@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Cursos Sarasa</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#cursos">Catálogo de Cursos</a></li>
+                <li><a href="#contacto">Información de Contacto</a></li>
+                <li><a href="#encargado">Encargado del Sitio</a></li>
+                <li><a href="#actividad">Actividad 1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cursos">
+        <h1>Catálogo de Cursos</h1>
+        <p style="margin-bottom: 10px;">Selecciona una categoría:</p>
+
+        <input type="radio" id="opcion-todos" name="opcion" checked>
+        <label for="opcion-todos">Todos</label>
+
+        <input type="radio" id="opcion-ingles" name="opcion">
+        <label for="opcion-ingles">Inglés</label>
+
+        <input type="radio" id="opcion-frances" name="opcion">
+        <label for="opcion-frances">Francés</label>
+
+        <div class="cursos-container">
+            <div class="curso-card categoria-ingles">
+                <h2>Curso de Inglés 1</h2>
+                <a href="programas/curso_ingles_1.pdf" download>Descargar Programa</a>
+            </div>
+
+            <div class="curso-card categoria-ingles">
+                <h2>Curso de Inglés 2</h2>
+                <a href="programas/curso_ingles_2.pdf" download>Descargar Programa</a>
+            </div>
+
+            <div class="curso-card categoria-ingles">
+                <h2>Curso de Inglés 3</h2>
+                <a href="programas/curso_ingles_3.pdf" download>Descargar Programa</a>
+            </div>
+
+            <div class="curso-card categoria-frances">
+                <h2>Curso de Francés 1</h2>
+                <a href="programas/curso_frances_1.pdf" download>Descargar Programa</a>
+            </div>
+
+            <div class="curso-card categoria-frances">
+                <h2>Curso de Francés 2</h2>
+                <a href="programas/curso_frances_2.pdf" download>Descargar Programa</a>
+            </div>
+
+            <div class="curso-card categoria-frances">
+                <h2>Curso de Francés 3</h2>
+                <a href="programas/curso_frances_3.pdf" download>Descargar Programa</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h1>Información de Contacto</h1>
+        <form>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="encargado">
+        <h1>Encargado del Sitio</h1>
+        <p>Nombre del encargado: Gonzalo BZ</p>
+        <p>Correo electrónico: gonzalobz@cursossarasa.com</p>
+    </section>
+
+    <section id="actividad">
+        <h1>ACTIVIDAD 1 - PROYECTO DE SOFTWARE</h1>
+        <a href="img/enunciado.png" target="_blank">Ver enunciado</a>
+        <p></p>
+        <a href="#" target="_blank">Ver video</a>
+    </section>
+
+</body>
+
+</html>

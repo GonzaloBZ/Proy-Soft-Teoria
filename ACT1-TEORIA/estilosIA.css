@@ -1,0 +1,197 @@
+/* Reset de estilos */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+label,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #0205a1;
+    color: #fff;
+    padding: 35px 0;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #1acc8d;
+}
+
+section {
+    padding: 100px 0px;
+}
+
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #0205a1;
+}
+
+#contacto label {
+    color: #ffffff;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #1acc8d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: #02754d;
+}
+
+input[type=radio] {
+    margin-left: 15px;
+}
+
+input[type=radio]:active {
+    fill: #1acc8d;
+}
+
+#contacto {
+    background-color: #0205a1;
+}
+
+#contacto h1 {
+    color: #ffffff;
+}
+
+/* Estilos de las tarjetas de cursos */
+.curso-card {
+    display: none;
+    /* Ocultar todos los cursos por defecto */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 80px 10px;
+    margin: 30px 5px;
+    box-shadow: 2px 2px 5px #888888;
+    width: 40%;
+    box-sizing: content-box;
+}
+
+.curso-card a {
+    background-color: #1acc8d;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin: 10px 0px;
+    box-shadow: 2px 2px 5px #888888;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.curso-card a:hover {
+    background-color: #02754d;
+}
+
+#actividad {
+    background-color: #1acc8d;
+}
+
+#actividad a {
+    background-color: #0205a1;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin: 10px 0px;
+    box-shadow: 2px 2px 5px #888888;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+#actividad a:hover {
+    background-color: #1f23ff;
+}
+
+/* Mostrar todos los bloques cuando se selecciona "todos" */
+#opcion-todos:checked~.cursos-container .curso-card {
+    display: block;
+}
+
+/* Mostrar solo los bloques de la categoría "ingles" cuando se selecciona "ingles" */
+#opcion-ingles:checked~.cursos-container .categoria-ingles {
+    display: block;
+}
+
+/* Mostrar solo los bloques de la categoría "frances" cuando se selecciona "frances" */
+#opcion-frances:checked~.cursos-container .categoria-frances {
+    display: block;
+}
+
+.cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        max-width: 80%;
+    }
+
+    .cursos-container {
+        flex-direction: column;
+    }
+
+    .curso-card {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
